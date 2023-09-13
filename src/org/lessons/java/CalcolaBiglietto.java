@@ -17,11 +17,11 @@ public class CalcolaBiglietto {
 		//calcolo il costo del biglietto
 		double fullPrice = km * 0.21;
 		
-		if(age < 18 ) {
-			fullPrice -= fullPrice * 0.2;
-		} else if (age >= 65) {
-			fullPrice -= fullPrice * 0.4;
-		}
+		if (age < 18) {
+            fullPrice *= 0.8; // Applica direttamente uno sconto del 20%
+        } else if (age >= 65) {
+            fullPrice *= 0.6; // Applica direttamente uno sconto del 40%
+        }
 		
 		double finalPrice = Math.round(fullPrice * 100.0) / 100.0;
 		System.out.println("prezzo del biglietto: " + finalPrice + " euro");
