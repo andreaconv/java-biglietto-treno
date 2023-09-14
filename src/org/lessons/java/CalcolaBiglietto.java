@@ -23,8 +23,9 @@ public class CalcolaBiglietto {
             fullPrice *= 0.6; // Applica direttamente uno sconto del 40%
         }
 		
-		double finalPrice = Math.round(fullPrice * 100.0) / 100.0;
-		System.out.println("prezzo del biglietto: " + finalPrice + " euro");
+		//double finalPrice = Math.round(fullPrice * 100.0) / 100.0;
+		//System.out.println("prezzo del biglietto: " + finalPrice + " euro");
+		System.out.println("prezzo del biglietto: " + String.format("%.02f", fullPrice ) + " euro");
 		
 	}
 
